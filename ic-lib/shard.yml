@@ -1,0 +1,17 @@
+name: gui
+version: 0.1.0
+
+authors:
+  - serge <serge.hulne@gmail.com>
+
+crystal: 1.6.0
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  blueprint:
+    github: stephannv/blueprint
+
+postinstall: cd  src/gui && make all
